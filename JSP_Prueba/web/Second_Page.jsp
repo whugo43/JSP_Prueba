@@ -5,6 +5,14 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%
+ // Este es un scriptlet
+ // Es código en Java que captura los parámetros enviados
+ // en el objeto "request"
+ String number1 = request.getParameter("number1");
+ String number2 = request.getParameter("number2");
+Integer result= Integer.parseInt(number1)+Integer.parseInt(number2); 
+%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -13,5 +21,9 @@
     </head>
     <body>
         <h1>Hello World!</h1>
+        <%= number1 %>
+        <%= number2 %>
+        <%= result %>
+        
     </body>
 </html>
