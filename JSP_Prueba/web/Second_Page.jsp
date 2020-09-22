@@ -21,6 +21,8 @@ Integer result= Integer.parseInt(number1)+Integer.parseInt(number2);
     </head>
     <body>
         <h1>Hello World!</h1>
+        <h1>Hello World!</h1>
+        <h1>Hello World!</h1>
         <%= number1 %>
         <%= number2 %>
         <%= result %>
